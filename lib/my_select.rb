@@ -5,4 +5,6 @@ def my_select(collection)
   while i < collection.length
   if yield(collection[i]) == TRUE
   result.push(collection[i])
+  end
+  i += 1
 end
